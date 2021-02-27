@@ -1,0 +1,13 @@
+.nav-text-block-menu {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Rubik,sans-serif;
+    text-align: left;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0) im !important;
+}
+
+.login-class{
+    background-color: "#44d344"
+}
