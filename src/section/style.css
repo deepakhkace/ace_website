@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: 4fr 1fr 7fr;
+}
+.h1 {
+  font-size: 32px;
+}
+.discription {
+  font-weight: 400;
+  font-size: 24px;
+}
+.p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.space1 {
+  height: 24px;
+}
+.space {
+  /* height: 104px; */
+}
+.spacebig {
+  height: 104px;
+}

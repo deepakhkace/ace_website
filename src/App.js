@@ -1,14 +1,24 @@
 import logo from "./logo.svg";
-//import "./App.css";
+import "./style.css";
 import Dropdown from "./dropdown/Dropdown";
 import AppHeader from "./AppHeader";
 // import AppHeader from "./AppHeader/AppHeader";
+import AppSlider from "./slider";
+import Section from "./section";
+import Sectionone from "./sectionone";
+import Footer from "./footer";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <AppHeader />
-      <Dropdown />
+      {/* <Dropdown /> */}
+      <div className="main">
+        {/* <AppSlider /> */}
+        <Section />
+        <Sectionone />
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

@@ -4,6 +4,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     fontFamily: "Rubik,sans-serif",
+    marginTop: "65px",
+    justifyContent: "flex-end",
   },
   card: {
     flex: 1,
@@ -40,10 +42,24 @@ export default function Dropdown() {
           <p className={classes.p}>start seo servies</p>
         </div>
       </div>
-
-      <div className={classes.card}>c</div>
-      <div className={classes.card}>d</div>
-      <div className={classes.card}>e</div>
+      <div className={classes.card}>
+        <div>
+          <p className={classes.title}>Ace seo srices</p>
+          <p className={classes.p}>start seo servies</p>
+        </div>
+      </div>
+      <div className={classes.card}>
+        <div>
+          <p className={classes.title}>Ace seo srices</p>
+          <p className={classes.p}>start seo servies</p>
+        </div>
+      </div>
+      <div className={classes.card}>
+        <div>
+          <p className={classes.title}>Ace seo srices</p>
+          <p className={classes.p}>start seo servies</p>
+        </div>
+      </div>
     </div>
   );
 }

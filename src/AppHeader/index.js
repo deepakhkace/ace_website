@@ -8,9 +8,9 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 //import { Popover } from "react-tiny-popover";
+//import Dropdown from "../dropdown/Dropdown";
 import Dropdown from "../dropdown/Dropdown";
-// import Dropdown from "../dropdown/Dropdown";
-import Popover from "react-tiny-popover";
+import { Popover } from "react-tiny-popover";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -48,23 +48,28 @@ export default function AppHeader() {
           <Typography variant="h5" className={classes.title}>
             Ace Analytics
           </Typography>
-          {/* <Popover
+          <Popover
             isOpen={isPopoverOpen}
             positions={["bottom"]}
             padding={10}
             onClickOutside={() => setIsPopoverOpen(false)}
-            content={
-              <div>
-                <Dropdown />
-              </div>
-            }
+            content={<Dropdown />}
           >
-            <div className="nav-text-block-menu">Clients Detail</div>
-            <ArrowDropDownIcon></ArrowDropDownIcon>
-          </Popover> */}
-          <div className="nav-text-block-menu">Clients Detail</div>
+            <>
+              <div
+                //className="nav-text-block-menu"
+                onClick={() => {
+                  setIsPopoverOpen(true);
+                }}
+              >
+                Clients Detail
+              </div>
+              <ArrowDropDownIcon></ArrowDropDownIcon>
+            </>
+          </Popover>
+          {/* <div className="nav-text-block-menu">Clients Detail</div>
           <ArrowDropDownIcon></ArrowDropDownIcon>
-          <Button className={classes.MuiButtonroot}>Login</Button>
+          <Button className={classes.MuiButtonroot}>Login</Button> */}
         </Toolbar>
       </AppBar>
     </div>
