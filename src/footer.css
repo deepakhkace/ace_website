@@ -5,3 +5,23 @@
     margin-top:2em;    
     margin-bottom:2em;
 }
+
+.section-row{
+color: #262626;
+cursor: pointer;
+font-size: 16px;
+line-height: 40px;
+font-family: Rubik,sans-serif;
+}
+
+.a-color{
+    border-bottom-style: none;
+    color:black;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+}
+
+.footer-container .a-color>div{
+    margin-left: 0.25rem;
+}
